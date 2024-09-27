@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="anchorPane" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parzival.a1q1.AudioController">
+   <children>
+      <Button fx:id="openFile" layoutX="123.0" layoutY="81.0" mnemonicParsing="false" onAction="#openFile" style="-fx-border-radius: 5px; -fx-border-color: black; -fx-border-width: 3px; -fx-background-color: Green;" text="Openfile">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Text id="title" fx:id="title" fill="#06a942" layoutX="94.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Audio Application" underline="true">
+         <font>
+            <Font size="27.0" />
+         </font></Text>
+      <Pane layoutX="100.0" layoutY="150.0" prefHeight="100.0" prefWidth="700.0" style="-fx-background-color: black;">
+         <children>
+            <Canvas fx:id="canvas1" height="100.0" width="700.0" />
+         </children></Pane>
+      <Pane layoutX="100.0" layoutY="262.0" prefHeight="100.0" prefWidth="700.0" style="-fx-background-color: black;">
+         <children>
+            <Canvas fx:id="canvas2" height="100.0" width="700.0" />
+         </children></Pane>
+      <Label id="numOfSamples" fx:id="numOfSamples" layoutX="434.0" layoutY="74.0" />
+      <Text layoutX="288.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Number of samples:">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Text layoutX="288.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Sampling rate:">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Label id="samplingRate" fx:id="samplingRate" layoutX="401.0" layoutY="101.0" />
+   </children>
+</AnchorPane>
